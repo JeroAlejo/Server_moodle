@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 // Modelo de preguntas de evaluaciones formativas.
 const preguntaSchema = new mongoose.Schema({
-    questionid: { type: Number, required: true },
+    questionid: { type: String, required: true },
     text : { type: String, required: true },
     answer_user : { type: String, required: true },
     answer_correct : { type: String, required: true },
@@ -11,7 +11,7 @@ const preguntaSchema = new mongoose.Schema({
 
 // Modelo de Pruebas formativas.
 const PruebasSchema = new mongoose.Schema({
-    testid: { type: Number, required: true },
+    testid: { type: String, required: true },
     name: { type: String, required: true },
     score: { type: Number, required: true }, // Double
     questions: {type: [preguntaSchema], required: true}, // Array de preguntas de diagnóstico
