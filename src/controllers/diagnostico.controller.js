@@ -28,8 +28,8 @@ diagnosticoController.registrarDiagnostico = async (req, res
             userid: userid,
             courseid: courseid,
             learning_styles: {
-                visual: 0.5,
-                auditory: 0.3,
+                visual: 0.3,
+                auditory: 0.5,
                 textual: 0.1,
                 kinesthetic: 0.1
             },

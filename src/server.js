@@ -10,6 +10,7 @@ const port = 3000;
 const diagnosticoRoutes = require('./routes/diagnostico.routes');
 const aprendeformativaRoutes = require('./routes/aprendeformativa.routes');
 const demuestraStatRoutes = require('./routes/demuestrastat.routes');
+const retroalimentacionvplRoutes = require('./routes/retroalimentacionvpl.routes');
 
 //Funcion que incia el servidor
 const startServer = async () => {
@@ -23,6 +24,8 @@ const startServer = async () => {
         app.use('/aprendeformativa', aprendeformativaRoutes);
         // Rutas de demuestraStat
         app.use('/demuestrastat', demuestraStatRoutes);
+        // Ruta de retroalimentacionvpl
+        app.use('/retroalimentacionvpl',retroalimentacionvplRoutes);
         //Levantar el servidor
         app.listen(port,'0.0.0.0', () => {
 

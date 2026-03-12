@@ -52,7 +52,7 @@ aprendeformativaController.registrarPruebasFormativas = async (req, res) => {
         };
         
         console.log('Mensaje enviado:', respuestaMoodle);
-        res.status(200).json({ message: respuestaMoodle });
+        res.status(200).json(respuestaMoodle);
     }catch (error) {
         console.error('Error al registrar las pruebas formativas:', error);
         res.status(500).json({message: 'Error al registrar las pruebas formativas'});
